@@ -129,7 +129,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: (255, 0, 0, 0.5);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -142,7 +142,7 @@ a:hover {
   text-align: center;
   font-size: 1.5rem;
   color: black;
-  text-decoration: none;
+  background-color: (255, 0, 0, 0.5);
   transition: all 0.3 ease-in-out;
 }
 
@@ -318,7 +318,7 @@ section {
 .about-details-container {
   display: flex;
 }
-.about-text{
+.about-text {
   font-size: 1.5rem;
   align-items: center;
 }

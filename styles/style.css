@@ -1,8 +1,27 @@
 /* General styles */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-  margin:  0;
+@font-face {
+  font-family: "BlopyFont";
+
+  src: url("../assets/fonts/BlopyFont.woff") format("woff"),
+    url("../assets/fonts/BlopyFont-4BxL6.ttf") format("truetype"),
+    url("../assets/fonts/BlopyFont-owe0A.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Atop";
+
+  src: 
+    url("../assets/fonts/Atop-R99O3.ttf") format("truetype"),
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
   padding: 0;
 }
 /* Circle gradient background */
@@ -38,8 +57,9 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "BlopyFont",  "Roboto",sans-serif;
   font-style: normal;
+  background-color: #F5F5F5;
 }
 
 html {
@@ -91,8 +111,8 @@ a:hover {
   text-decoration-color: #98ff98;
 }
 .logo {
-  font-size: 2rem;
-  font-weight: bold;
+  font-family: "BlopyFont", sans-serif;
+  font-size: 2.5rem;
 }
 
 .logo:hover {
@@ -178,6 +198,7 @@ a:hover {
 
 /*Sections*/
 section {
+  font-family: "Roboto",sans-serif;
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
@@ -222,11 +243,9 @@ section {
 }
 .section__text p {
   font-weight: 600;
-  
 }
 .section__text_p1 {
   text-align: center;
-  
 }
 .section__text_p2 {
   font-size: 1.75rem;
@@ -234,9 +253,13 @@ section {
 }
 
 .title {
-
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
+  font-family: 'Atop',Roboto;
+  font-style: normal;
+  justify-content: space-around;
+
+  
 }
 
 #socials-container {
@@ -261,6 +284,7 @@ section {
   gap: 1rem;
 }
 .btn {
+
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -322,8 +346,32 @@ section {
 .about-details-container {
   display: flex;
 }
+.text-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.about-img-container{
+   flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  border-radius: 5%;
+  width: 20vw;
+  
+  height: 56vh;
+  margin: 0;
+}
+.about-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .about-text {
   font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 450;
   align-items: center;
 }
 .arrow {
@@ -341,7 +389,7 @@ section {
   text-align: center;
 }
 .project-details-container {
-  margin: auto 0;
+  margin: 0;
   padding: 1.5rem;
   flex: 1;
   width: 100%;
@@ -363,6 +411,7 @@ section {
 }
 
 .experience-sub-title {
+  font-family: "Atop","Roboto";
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
@@ -377,7 +426,10 @@ section {
 
 article .icon {
   cursor: default;
-  justify-self: center
+  justify-self: center;
+}
+.icon{
+  display: inline-block;
 }
 .article-container {
   margin: 0 auto;
@@ -393,7 +445,7 @@ article {
   display: flex;
   justify-items: center;
   width: 10rem;
-  justify-content: space-around;
+
 }
 
 /* Projects Section */
@@ -409,10 +461,13 @@ article {
 .project-img {
   border-radius: 2rem;
   width: 100%;
+  height: 200px;
 }
+
 
 .project-title {
   margin: 1rem;
+  font-size: 2rem;
   color: black;
 }
 .project-btn {
@@ -460,4 +515,5 @@ footer {
 }
 footer p {
   text-align: center;
+  font-family: "Roboto",sans-serif;
 }
